@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(log_bg.png) ; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form {
+            /* position: absolute;
+            top: 90px; */
+            background-color: rgba(198, 181, 136, 0.725);
+            padding: 40px;
+            margin-top: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .h1 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: rgb(66, 33, 22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .field {
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 25px;
+            border-radius: 3px;
+            border: none;
+        }
+
+        .email,
+        .password {
+            border: solid 1px #CACACA;
+            box-shadow: rgb(78, 77, 77) 2px 2px;
+        }
+        .cell{
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .button1 {
+            margin-top: 15px;
+            font-weight: 700;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            font-weight: bold;
+            box-shadow: rgba(41, 41, 41, 0.363) 3px 4px 5px;
+        }
+
+        .haveAcc,
+        .forgot-password {
+            color: rgb(126, 68, 13);
+            text-decoration: none;
+        }
+
+        .haveAcc:hover,
+        .forgot-password:hover {
+            text-decoration: underline;
+            color: rgb(156, 165, 235);
+        }
+
+        .line {
+            color: #CACACA;
+            border: #CACACA solid 1px;
+            height: 1px;
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        .or {
+            color: white;
+            font-size: 20px;
+            position: relative;
+            transform: translateY(-17px);
+            /*background-color: rgba(81, 88, 145, 0.808);*/
+            border-radius: 50%;
+        }
+
+        .fb {
+            color: white;
+            background-color: rgb(50, 50, 185);
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            font-weight: 700;
+            border-radius: 4px;
+            border: none;
+            border-bottom: white 2px solid;
+            cursor: pointer;
+        }
+
+        .fb:hover {
+            font-weight: 900;
+            border-bottom: none;
+        }
+
+        .gl {
+            width: 100%;
+            padding: 10px;
+            font-weight: 700;
+            border-radius: 4px;
+            border: none;
+            border-bottom: rgb(187, 46, 44) 2px solid;
+            cursor: pointer;
+        }
+
+        .gl:hover {
+            font-weight: 900;
+            border-bottom: none;
+        }
+        .links{
+            text-decoration: none;
+        }
+        .fc{
+            color: white;
+        }
+        .go{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="form login">
+            <div class="login-content">
+                <h1 class="h1">Log In !</h1>
+
+                <form>
+                    <div class="cell">
+                        <div>
+                            <input type="email" placeholder="Email" class="field email">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Password" class="field password">
+                        </div>
+                    </div>
+                    <div class="forms-links">
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <div class="button">
+                        <button class="field button1" onclick="x()">login</button>
+                    </div>
+                    <div class="forms-links">
+                        <span>Don't have an account? </span>
+                        <a href="tourismSignUp.html" class="haveAcc">SignUp</a>
+                    </div>
+                </forms>
+                <div class="line"><span></span></div>
+                <div class="or">or</div>
+                <div class="social">
+                    <div><button class="fb"><a class="links fc" href="https://www.facebook.com/login/">Log in with Facebook</a></button></div>
+                    <div><button class="gl"><a class="links go" href="https://accounts.google.com/v3/signin/identifier?dsh=S1812573153%3A1655944654029516&flowEntry=ServiceLogin&flowName=WebLiteSignIn&ifkv=AX3vH39E0iYVTmn-NoMNM_C35EPrno8LWsRx2Qhr0HApkVLZ-Zc_Vql8ouaSQOiXzEmthrpOPAV5">Log in with Google</a></button></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        function x(){
+            window.alert("WELCOME BACK TO YOUR ACCOUNT !");
+        }
+    </script>
+</body>
+
+</html>

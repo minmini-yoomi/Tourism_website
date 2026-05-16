@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SIGN UP PAGE</title>
+    <style>
+        body {
+            background-image: url(Images/sign-up-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+             margin-top: 20px;
+            margin-bottom: 20px;
+            /* background-color: rgba(235, 251, 251, 0.95);
+            border: 3px solid rgb(45, 44, 74); */
+            background-color: rgba(235, 251, 251, 0.282);
+            border: 1px solid rgba(45, 44, 74, 0.325);
+            border-radius: 12px;
+            padding: 30px 40px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+         h1 {
+            text-align: center;
+            color: rgb(66, 33, 22);
+            margin-bottom: 25px;
+        }
+
+        .choices1,
+        .choices2 {
+            background-color: rgba(251, 251, 235, 0.796);
+            padding: 20px;
+            width: 250px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .choicesWrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-between;
+            justify-items: center;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #b1 {
+            border: 4px double rgb(95, 55, 42);
+            background-color: rgba(255, 235, 205, 0.929);
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        #b1:hover {
+            background-color: rgb(95, 55, 42);
+            color: rgba(255, 235, 205, 0.929);
+        }
+
+        .haveAcc {
+            color: rgb(208, 58, 58);
+            text-decoration: none;
+        }
+
+        .haveAcc:hover {
+            text-decoration: underline;
+            color: rgb(149, 123, 83);
+        }
+        .forms-links{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="content">
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">Sign up</h1>
+            <div class="table">
+                <table
+                    style="border: 4px dashed rgb(95, 55, 42); padding: 10px; background-color: rgba(255, 235, 205, 0.929); border-radius: 2%;">
+                    <form>
+                        <tr>
+                            <th>First Name: </th>
+                            <th><input type="text"></th>
+                            <th>Last Name: </th>
+                            <th><input type="text"></th>
+                        </tr>
+                        <tr>
+                            <th> <br></th>
+                        </tr>
+                        <tr>
+                            <th>User Name: </th>
+                            <th><input type="text"></th>
+                            <th>Date Of Birth:</th>
+                            <th><input type="date"></th>
+                        </tr>
+                        <tr>
+                            <th> <br></th>
+                        </tr>
+                        <tr>
+                            <th>Gmail: </th>
+                            <th><input type="text"></th>
+                            <th>Password: </th>
+                            <th><input type="password"></th>
+                        </tr>
+                        <tr>
+                            <th> <br></th>
+                        </tr>
+                        <tr>
+                            <th>Phone Number:</th>
+                            <th><input type="text"></th>
+                            <th>City: </th>
+                            <th><select style="width: 175px;">
+                                    <option value="Damascuse">Damascuse</option>
+                                    <option value="aleppo">Aleppo</option>
+                                    <option value="latakia">Latakia</option>
+                                    <option value="tartous">Tartous</option>
+                                    <option value="alswaydaa">Al-Swaydaa</option>
+                                    <option value="daraa">Daraa</option>
+                                    <option value="homs">Homs</option>
+                                    <option value="hama">Hama</option>
+                                    <option value="dier-ezzor">Dier-Ezzor</option>
+                                    <option value="al-hasakeh">Al-Hasakeh</option>
+                                </select></th>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+            <div class="choicesWrap">
+                <div class="choices1">
+                    <h3>Gender: </h3>
+                    <form>
+                        <input type="radio" name="r">
+                        <label>Female</label>
+                        <input type="radio" name="r">
+                        <label>Male</label>
+                        <h3>I am a : </h3>
+                        <input type="checkbox" name="c">
+                        <label>Student</label>
+                        <input type="checkbox" name="c">
+                        <label>Retired</label>
+                        <input type="checkbox" name="c">
+                        <label>Working</label>
+                </div>
+                <div class="choices2">
+                    <h3>By signing up you accept our terms and policy</h3>
+                    <input type="checkbox" check disabled checked style="cursor: not-allowed;">
+                    <label>I read terms and I accept</label><br><br>
+                    <input type="checkbox" check disabled checked style="cursor: not-allowed;">
+                    <label>I realise there's no refund after purchesing</label><br>
+                </div>
+            </div>
+            <div class="forms-links">
+                <span>Already have an account? </span>
+                <a href="tourismLogin.html" class="haveAcc">Login</a>
+            </div>
+            <div class="button">
+            <button id="b1" onclick="x()"><b>SIGN UP !</b></button>
+        </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function x() {
+            window.alert("WELCOME TO OUR COMUNITY!");
+        }
+    </script>
+</body>
+
+</html>
